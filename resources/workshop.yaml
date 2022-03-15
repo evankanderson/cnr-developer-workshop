@@ -21,6 +21,7 @@ spec:
 #    image: ghcr.io/clue2solve/knative-workshop-eduk8s:latest
     # files: github.com/tanzu-developer-experience/cnr-developer-workshop
     # files: github.com/evankanderson/cnr-developer-workshop/files?ref=func-testing
+    files: github.com/evankanderson/cnr-developer-workshop?ref=func-testing
   session:
     env:
     - name: FUNC_REGISTRY
