@@ -35,9 +35,6 @@ spec:
         enabled: false
       terminal:
         enabled: true
-      console:
-        enabled: true
-        vendor: octant
       editor:
         enabled: true
       files:
