@@ -1,18 +1,19 @@
-apiVersion: training.eduk8s.io/v1alpha2
+apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: Workshop
 metadata:
-  name: cnr-fundamentals
+  name: func-lab
+  namespace: func-lab
 spec:
-  title: Cloud Native Runtimes for VMware Tanzu Fundamentals
-  description: A workshop that shows users hands-on how to use the Cloud Native Runtimes for VMware Tanzu
-  vendor: eduk8s.io
+  title: Knative functions UX interview
+  description: An environment for performing functions UX interviews
+  vendor: knative.dev
   authors:
   - Anand Rao 
   - Craig Olrich
   - Evan Anderson
-  difficulty: intermediate
-  duration: 15m
-  url: https://github.com/tanzu-developer-experience/cnr-developer-workshop
+  difficulty: beginner
+  duration: 60m
+  url: https://github.com/evankanderson/cnr-developer-workshop
   content:
     #image: quay.io/eduk8s/lab-markdown-sample:master
 #    image: honnuanand/cnr-dev-fundamentals:0.3
@@ -20,7 +21,7 @@ spec:
 #    image: olrich/cnr-workshop:0.1
     image: ghcr.io/clue2solve/knative-workshop-eduk8s:latest
     # files: github.com/tanzu-developer-experience/cnr-developer-workshop
-    files: github.com/evankanderson/cnr-developer-workshop/files?ref=func-testing
+    # files: github.com/evankanderson/cnr-developer-workshop/files?ref=func-testing
   session:
     env:
     - name: FUNC_REGISTRY
