@@ -19,23 +19,28 @@ spec:
 #    image: quay.io/eduk8s/base-environment:master
 #    image: olrich/cnr-workshop:0.1
     image: ghcr.io/clue2solve/knative-workshop-eduk8s:latest
-    files: github.com/tanzu-developer-experience/cnr-developer-workshop
+    # files: github.com/tanzu-developer-experience/cnr-developer-workshop
+    files: github.com/evankanderson/cnr-developer-workshop/files?ref=func-testing
   session:
+    env:
+    - name: FUNC_REGISTRY
+      value: "registry.20.118.148.208.nip.io/func/${session_namespace}"
     namespaces:
-      budget: xxx-large
+      budget: medium
       limits:
         min:
           cpu: 25m
     applications:
+      workshop:
+        enabled: false
       terminal:
         enabled: true
-        layout: split
       console:
         enabled: true
         vendor: octant
       editor:
         enabled: true
-      registry:
+      files:
         enabled: true
       docker:
         enabled: true
