@@ -2,7 +2,6 @@ apiVersion: learningcenter.tanzu.vmware.com/v1beta1
 kind: Workshop
 metadata:
   name: func-lab
-  namespace: func-lab
 spec:
   title: Knative functions UX interview
   description: An environment for performing functions UX interviews
@@ -19,13 +18,13 @@ spec:
 #    image: honnuanand/cnr-dev-fundamentals:0.3
 #    image: quay.io/eduk8s/base-environment:master
 #    image: olrich/cnr-workshop:0.1
-    image: ghcr.io/clue2solve/knative-workshop-eduk8s:latest
+#    image: ghcr.io/clue2solve/knative-workshop-eduk8s:latest
     # files: github.com/tanzu-developer-experience/cnr-developer-workshop
     # files: github.com/evankanderson/cnr-developer-workshop/files?ref=func-testing
   session:
     env:
     - name: FUNC_REGISTRY
-      value: "registry.20.118.148.208.nip.io/func/${session_namespace}"
+      value: "registry.20.118.148.208.nip.io/func/$(session_namespace)"
     namespaces:
       budget: medium
       limits:

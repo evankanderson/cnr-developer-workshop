@@ -2,6 +2,8 @@
 #
 # Load the CA certificate for the private registry
 
+echo "Loading registry cert"
+
 cat > $HOME/.docker/certs.d/registry.20.118.148.208.nip.io/ca.crt <<EOF
 -----BEGIN CERTIFICATE-----
 MIIDCTCCAfGgAwIBAgIRAIiLJ7aFUrIx7+zcDaxi1nkwDQYJKoZIhvcNAQELBQAw

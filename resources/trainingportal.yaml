@@ -1,0 +1,19 @@
+apiVersion: learningcenter.tanzu.vmware.com/v1beta1
+kind: TrainingPortal
+metadata:
+  name: func-lab
+spec:
+  portal:
+    ingress:
+      hostname: func-lab
+    registration:
+      type: anonymous
+    reserved: 0
+    sessions:
+      maximum: 10
+    updates:
+      workshop: true
+  workshops:
+  - expires: 90m
+    name: func-lab
+    orphaned: 60m

@@ -17,3 +17,5 @@ curl -L -o kn-plugin-func https://github.com/knative-sandbox/kn-plugin-func/rele
 
 chmod +x kn kn-plugin-func
 ln -s kn-plugin-func func
+
+echo "Installed plugins"
