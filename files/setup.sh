@@ -26,6 +26,7 @@ echo 'export PATH=${PATH}:${HOME}/.bin'
 
 echo "Loading registry cert"
 
+mkdir -p $HOME/.docker/certs.d/registry.20.118.148.208.nip.io
 cat > $HOME/.docker/certs.d/registry.20.118.148.208.nip.io/ca.crt <<EOF
 -----BEGIN CERTIFICATE-----
 MIIDCTCCAfGgAwIBAgIRAIiLJ7aFUrIx7+zcDaxi1nkwDQYJKoZIhvcNAQELBQAw
