@@ -16,4 +16,4 @@ spec:
   workshops:
   - expires: 90m
     name: func-lab
-    orphaned: 60m
+    orphaned: 20m
