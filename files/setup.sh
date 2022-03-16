@@ -49,4 +49,6 @@ rIP+pyewWkdxUAHoMg==
 -----END CERTIFICATE-----
 EOF
 
+echo '{"auths":{"registry.20.118.148.208.nip.io":{"username":"none","password":"none","auth":""}}}' > $HOME/.docker/config.json
+
 echo 'export SSL_CERT_DIR=${HOME}/.docker/certs.d/registry.20.118.148.208.nip.io'

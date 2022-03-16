@@ -26,3 +26,6 @@ S3aE8ySUyJFDYp13IJwLVWu3xGvtWLeTjbagXP2rthVHgep8+bB4XPjPVirErAWK
 rIP+pyewWkdxUAHoMg==
 -----END CERTIFICATE-----
 EOF
+
+echo '{"auths":{"registry.20.118.148.208.nip.io":{"username":"none","password":"none","auth":""}}}' > $HOME/.docker/config.json
+
