@@ -1,0 +1,6 @@
+func is a Client Library and CLI enabling the development and deployment of Functions.
+
+func builds function code into container images; Knative runs container images in a serverless fashion.
+
+To get started with functions type the following command:
+func help
