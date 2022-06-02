@@ -12,8 +12,8 @@ cd $HOME/.bin
 
 echo "Downloading kn and kn-plugin-func for $VARIANT" 1>&2
 
-curl -L -o kn https://github.com/knative/client/releases/download/knative-v1.2.0/kn-$VARIANT >&/dev/null
-curl -L -o kn-plugin-func https://github.com/knative-sandbox/kn-plugin-func/releases/download/v0.22.0/func_$FUNC_VARIANT >&/dev/null
+curl -L -o kn https://github.com/knative/client/releases/download/knative-v1.5.0/kn-$VARIANT >&/dev/null
+curl -L -o kn-plugin-func https://github.com/knative-sandbox/kn-plugin-func/releases/download/v0.24.0/func_$FUNC_VARIANT >&/dev/null
 
 chmod +x kn kn-plugin-func
 ln -s kn-plugin-func func
